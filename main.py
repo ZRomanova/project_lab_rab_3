@@ -87,6 +87,7 @@ print(cash_calculator.get_week_stats())
 
 calories_calculator = CaloriesCalculator(1000)
 
+
 calories_calculator.add_record(Record(amount=70, comment='киндер сюрприз'))
 
 print(calories_calculator.get_calories_remained())
