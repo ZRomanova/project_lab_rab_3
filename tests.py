@@ -19,7 +19,7 @@ def cal_calc():
     return calories_calculator.get_calories_remained()
 
 def test_cashCalc(cash_calc):
-    assert cash_calc == 'Денег нет, держись: твой долг - 1445.0 rub'
+    assert cash_calc == 'Денег нет, держись: твой долг - 1445.00 rub'
 
 def test_CalCalc(cal_calc):
     assert cal_calc == 'Хватит есть!'
