@@ -14,8 +14,8 @@ def cash_calc():
 def cal_calc():
     calories_calculator = CaloriesCalculator(1500)
     calories_calculator.add_record(Record(amount=1234, comment='БИГ ЖРАЧКА.'))
-    calories_calculator.add_record(Record(amount=42, comment='Молоко', ))
-    calories_calculator.add_record(Record(amount=130, comment='Овсянка', ))
+    calories_calculator.add_record(Record(amount=42, comment='Молоко'))
+    calories_calculator.add_record(Record(amount=130, comment='Овсянка' ))
     return calories_calculator.get_calories_remained()
 
 def test_cashCalc(cash_calc):
