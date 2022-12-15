@@ -45,7 +45,7 @@ class CashCalculator(Calculator):
         elif cash == limit:
             return 'Денег нет, держись'
         else:
-            return 'Денег нет, держись: твой долг - %.2f %s' % (limit - cash, currency)
+            return 'Денег нет, держись: твой долг %.2f %s' % (limit - cash, currency)
 
 class CaloriesCalculator(Calculator):
 

@@ -8,7 +8,7 @@ def cash_calc():
     cash_calculator.add_record(Record(amount=145, comment='кофе'))
     cash_calculator.add_record(Record(amount=300, comment='Чаи гонять'))
     cash_calculator.add_record(Record(amount=2000, comment='Еда в дорогу'))
-    return cash_calculator.get_today_cash_remained()
+    return cash_calculator.get_today_cash_remained('rub')
 
 @pytest.fixture()
 def cal_calc():
@@ -19,7 +19,7 @@ def cal_calc():
     return calories_calculator.get_calories_remained()
 
 def test_cashCalc(cash_calc):
-    assert cash_calc == 'Денег нет, держись: твой долг - 1445.00 rub'
+    assert cash_calc == 'Денег нет, держись: твой долг -1445.00 rub'
 
 def test_CalCalc(cal_calc):
-    assert cal_calc == 'Хватит есть!'
+    assert cal_calc == 'Сегодня можно съесть что-нибудь ещё, но с общей калорийностью не более 94 кКал'
